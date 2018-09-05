@@ -1,0 +1,311 @@
+
+#*************************************************************************************************************************************************************
+def printBoard(spot1, spot2, spot3, spot4, spot5, spot6, spot7, spot8, spot9, spot10, spot11, spot12, spot13, spot14, spot15, spot16, spot17, spot18, spot19, spot20, spot21, spot22, spot23, spot24, spot25, spot26, spot27, spot28, spot29, spot30, spot31, spot32, spot33, spot34, spot35, spot36, spot37, spot38, spot39, spot40, spot41, spot42, spot43, spot44, spot45, spot46, spot47, spot48, spot49, spot50, spot51, spot52, spot53, spot54, spot55, spot56, spot57, spot58, spot59, spot60, spot61, spot62, spot63, spot64, spot65, spot66, spot67, spot68, spot69, spot70, spot71, spot72, spot73, spot74, spot75, spot76, spot77, spot78, spot79, spot80, spot81):
+    print("%s %s %s | %s %s %s | %s %s %s" % (spot73, spot74, spot75, spot76, spot77, spot78, spot79, spot80, spot81))
+    print("%s %s %s | %s %s %s | %s %s %s" % (spot64, spot65, spot66, spot67, spot68, spot69, spot70, spot71, spot72))
+    print("%s %s %s | %s %s %s | %s %s %s" % (spot55, spot56, spot57, spot58, spot59, spot60, spot61, spot62, spot63))
+    print("---------------------")
+    print("%s %s %s | %s %s %s | %s %s %s" % (spot46, spot47, spot48, spot49, spot50, spot51, spot52, spot53, spot54))
+    print("%s %s %s | %s %s %s | %s %s %s" % (spot37, spot38, spot39, spot40, spot41, spot42, spot43, spot44, spot45))
+    print("%s %s %s | %s %s %s | %s %s %s" % (spot28, spot29, spot30, spot31, spot32, spot33, spot34, spot35, spot36))
+    print("---------------------")
+    print("%s %s %s | %s %s %s | %s %s %s" % (spot19, spot20, spot21, spot22, spot23, spot24, spot25, spot26, spot27))
+    print("%s %s %s | %s %s %s | %s %s %s" % (spot10, spot11, spot12, spot13, spot14, spot15, spot16, spot17, spot18))
+    print("%s %s %s | %s %s %s | %s %s %s" % (spot1, spot2, spot3, spot4, spot5, spot6, spot7, spot8, spot9))
+    print("\n" * 10)
+
+def getInput(spot1, spot2, spot3, spot4, spot5, spot6, spot7, spot8, spot9, spot10, spot11, spot12, spot13, spot14, spot15, spot16, spot17, spot18, spot19, spot20, spot21, spot22, spot23, spot24, spot25, spot26, spot27, spot28, spot29, spot30, spot31, spot32, spot33, spot34, spot35, spot36, spot37, spot38, spot39, spot40, spot41, spot42, spot43, spot44, spot45, spot46, spot47, spot48, spot49, spot50, spot51, spot52, spot53, spot54, spot55, spot56, spot57, spot58, spot59, spot60, spot61, spot62, spot63, spot64, spot65, spot66, spot67, spot68, spot69, spot70, spot71, spot72, spot73, spot74, spot75, spot76, spot77, spot78, spot79, spot80, spot81):
+    while True:
+        print("Enter Large Grid Identifier: ", end="")
+        LGI = str(input())
+        if (LGI.isdigit()) and (len(LGI) == 1):
+            while True:
+                print("Enter Small Grid Identifier: ", end="")
+                SGI = str(input())
+                if (SGI.isdigit()) and (len(SGI) == 1):
+                    while True:
+                        print("Enter Number Change: ", end="")
+                        numberChange = str(input())
+                        if (numberChange.isdigit() or numberChange == " ") and (len(numberChange) == 1):
+                            runSolve = False
+                            break
+                        else:
+                            print("Invalid")
+                    break
+                else:
+                    print("Invalid")
+            break
+        elif LGI == "":
+            runSolve = True
+            break
+        else:
+            print("Invalid")
+    
+    if LGI == "1":
+        if SGI == "1":
+            spot1 = numberChange
+        elif SGI == "2":
+            spot2 = numberChange
+        elif SGI == "3":
+            spot3 = numberChange
+        elif SGI == "4":
+            spot10 = numberChange
+        elif SGI == "5":
+            spot11 = numberChange
+        elif SGI == "6":
+            spot12 = numberChange
+        elif SGI == "7":
+            spot19 = numberChange
+        elif SGI == "8":
+            spot20 = numberChange
+        elif SGI == "9":
+            spot21 = numberChange
+    elif LGI == "2":
+        if SGI == "1":
+            spot4 = numberChange
+        elif SGI == "2":
+            spot5 = numberChange
+        elif SGI == "3":
+            spot6 = numberChange
+        elif SGI == "4":
+            spot13 = numberChange
+        elif SGI == "5":
+            spot14 = numberChange
+        elif SGI == "6":
+            spot15 = numberChange
+        elif SGI == "7":
+            spot22 = numberChange
+        elif SGI == "8":
+            spot23 = numberChange
+        elif SGI == "9":
+            spot24 = numberChange
+    elif LGI == "3":
+        if SGI == "1":
+            spot7 = numberChange
+        elif SGI == "2":
+            spot8 = numberChange
+        elif SGI == "3":
+            spot9 = numberChange
+        elif SGI == "4":
+            spot16 = numberChange
+        elif SGI == "5":
+            spot17 = numberChange
+        elif SGI == "6":
+            spot18 = numberChange
+        elif SGI == "7":
+            spot25 = numberChange
+        elif SGI == "8":
+            spot26 = numberChange
+        elif SGI == "9":
+            spot27 = numberChange
+    elif LGI == "4":
+        if SGI == "1":
+            spot28 = numberChange
+        elif SGI == "2":
+            spot29 = numberChange
+        elif SGI == "3":
+            spot30 = numberChange
+        elif SGI == "4":
+            spot37 = numberChange
+        elif SGI == "5":
+            spot38 = numberChange
+        elif SGI == "6":
+            spot39 = numberChange
+        elif SGI == "7":
+            spot46 = numberChange
+        elif SGI == "8":
+            spot47 = numberChange
+        elif SGI == "9":
+            spot48 = numberChange
+    elif LGI == "5":
+        if SGI == "1":
+            spot31 = numberChange
+        elif SGI == "2":
+            spot32 = numberChange
+        elif SGI == "3":
+            spot33 = numberChange
+        elif SGI == "4":
+            spot40 = numberChange
+        elif SGI == "5":
+            spot41 = numberChange
+        elif SGI == "6":
+            spot42 = numberChange
+        elif SGI == "7":
+            spot49 = numberChange
+        elif SGI == "8":
+            spot50 = numberChange
+        elif SGI == "9":
+            spot51 = numberChange
+    elif LGI == "6":
+        if SGI == "1":
+            spot34 = numberChange
+        elif SGI == "2":
+            spot35 = numberChange
+        elif SGI == "3":
+            spot36 = numberChange
+        elif SGI == "4":
+            spot43 = numberChange
+        elif SGI == "5":
+            spot44 = numberChange
+        elif SGI == "6":
+            spot45 = numberChange
+        elif SGI == "7":
+            spot52 = numberChange
+        elif SGI == "8":
+            spot53 = numberChange
+        elif SGI == "9":
+            spot54 = numberChange
+    elif LGI == "7":
+        if SGI == "1":
+            spot55 = numberChange
+        elif SGI == "2":
+            spot56 = numberChange
+        elif SGI == "3":
+            spot57 = numberChange
+        elif SGI == "4":
+            spot64 = numberChange
+        elif SGI == "5":
+            spot65 = numberChange
+        elif SGI == "6":
+            spot66 = numberChange
+        elif SGI == "7":
+            spot73 = numberChange
+        elif SGI == "8":
+            spot74 = numberChange
+        elif SGI == "9":
+            spot75 = numberChange
+    elif LGI == "8":
+        if SGI == "1":
+            spot58 = numberChange
+        elif SGI == "2":
+            spot59 = numberChange
+        elif SGI == "3":
+            spot60 = numberChange
+        elif SGI == "4":
+            spot67 = numberChange
+        elif SGI == "5":
+            spot68 = numberChange
+        elif SGI == "6":
+            spot69 = numberChange
+        elif SGI == "7":
+            spot76 = numberChange
+        elif SGI == "8":
+            spot77 = numberChange
+        elif SGI == "9":
+            spot78 = numberChange
+    elif LGI == "9":
+        if SGI == "1":
+            spot61 = numberChange
+        elif SGI == "2":
+            spot62 = numberChange
+        elif SGI == "3":
+            spot63 = numberChange
+        elif SGI == "4":
+            spot70 = numberChange
+        elif SGI == "5":
+            spot71 = numberChange
+        elif SGI == "6":
+            spot72 = numberChange
+        elif SGI == "7":
+            spot79 = numberChange
+        elif SGI == "8":
+            spot80 = numberChange
+        elif SGI == "9":
+            spot81 = numberChange
+
+    return [runSolve, spot1, spot2, spot3, spot4, spot5, spot6, spot7, spot8, spot9, spot10, spot11, spot12, spot13, spot14, spot15, spot16, spot17, spot18, spot19, spot20, spot21, spot22, spot23, spot24, spot25, spot26, spot27, spot28, spot29, spot30, spot31, spot32, spot33, spot34, spot35, spot36, spot37, spot38, spot39, spot40, spot41, spot42, spot43, spot44, spot45, spot46, spot47, spot48, spot49, spot50, spot51, spot52, spot53, spot54, spot55, spot56, spot57, spot58, spot59, spot60, spot61, spot62, spot63, spot64, spot65, spot66, spot67, spot68, spot69, spot70, spot71, spot72, spot73, spot74, spot75, spot76, spot77, spot78, spot79, spot80, spot81]
+    
+#*************************************************************************************************************************
+spot1 = " "
+spot2 = " "
+spot3 = " "
+spot4 = " "
+spot5 = " "
+spot6 = " "
+spot7 = " "
+spot8 = " "
+spot9 = " "
+spot10 = " "
+spot11 = " "
+spot12 = " "
+spot13 = " "
+spot14 = " "
+spot15 = " "
+spot16 = " "
+spot17 = " "
+spot18 = " "
+spot19 = " "
+spot20 = " "
+spot21 = " "
+spot22 = " "
+spot23 = " "
+spot24 = " "
+spot25 = " "
+spot26 = " "
+spot27 = " "
+spot28 = " "
+spot29 = " "
+spot30 = " "
+spot31 = " "
+spot32 = " "
+spot33 = " "
+spot34 = " "
+spot35 = " "
+spot36 = " "
+spot37 = " "
+spot38 = " "
+spot39 = " "
+spot40 = " "
+spot41 = " "
+spot42 = " "
+spot43 = " "
+spot44 = " "
+spot45 = " "
+spot46 = " "
+spot47 = " "
+spot48 = " "
+spot49 = " "
+spot50 = " "
+spot51 = " "
+spot52 = " "
+spot53 = " "
+spot54 = " "
+spot55 = " "
+spot56 = " "
+spot57 = " "
+spot58 = " "
+spot59 = " "
+spot60 = " "
+spot61 = " "
+spot62 = " "
+spot63 = " "
+spot64 = " "
+spot65 = " "
+spot66 = " "
+spot67 = " "
+spot68 = " "
+spot69 = " "
+spot70 = " "
+spot71 = " "
+spot72 = " "
+spot73 = " "
+spot74 = " "
+spot75 = " "
+spot76 = " "
+spot77 = " "
+spot78 = " "
+spot79 = " "
+spot80 = " "
+spot81 = " "
+#*************************************************************************************************
+while True:
+    print("\n" * 35)
+    printBoard(spot1, spot2, spot3, spot4, spot5, spot6, spot7, spot8, spot9, spot10, spot11, spot12, spot13, spot14, spot15, spot16, spot17, spot18, spot19, spot20, spot21, spot22, spot23, spot24, spot25, spot26, spot27, spot28, spot29, spot30, spot31, spot32, spot33, spot34, spot35, spot36, spot37, spot38, spot39, spot40, spot41, spot42, spot43, spot44, spot45, spot46, spot47, spot48, spot49, spot50, spot51, spot52, spot53, spot54, spot55, spot56, spot57, spot58, spot59, spot60, spot61, spot62, spot63, spot64, spot65, spot66, spot67, spot68, spot69, spot70, spot71, spot72, spot73, spot74, spot75, spot76, spot77, spot78, spot79, spot80, spot81)
+
+    runSolve, spot1, spot2, spot3, spot4, spot5, spot6, spot7, spot8, spot9, spot10, spot11, spot12, spot13, spot14, spot15, spot16, spot17, spot18, spot19, spot20, spot21, spot22, spot23, spot24, spot25, spot26, spot27, spot28, spot29, spot30, spot31, spot32, spot33, spot34, spot35, spot36, spot37, spot38, spot39, spot40, spot41, spot42, spot43, spot44, spot45, spot46, spot47, spot48, spot49, spot50, spot51, spot52, spot53, spot54, spot55, spot56, spot57, spot58, spot59, spot60, spot61, spot62, spot63, spot64, spot65, spot66, spot67, spot68, spot69, spot70, spot71, spot72, spot73, spot74, spot75, spot76, spot77, spot78, spot79, spot80, spot81 = getInput(spot1, spot2, spot3, spot4, spot5, spot6, spot7, spot8, spot9, spot10, spot11, spot12, spot13, spot14, spot15, spot16, spot17, spot18, spot19, spot20, spot21, spot22, spot23, spot24, spot25, spot26, spot27, spot28, spot29, spot30, spot31, spot32, spot33, spot34, spot35, spot36, spot37, spot38, spot39, spot40, spot41, spot42, spot43, spot44, spot45, spot46, spot47, spot48, spot49, spot50, spot51, spot52, spot53, spot54, spot55, spot56, spot57, spot58, spot59, spot60, spot61, spot62, spot63, spot64, spot65, spot66, spot67, spot68, spot69, spot70, spot71, spot72, spot73, spot74, spot75, spot76, spot77, spot78, spot79, spot80, spot81)
+    if runSolve == True:
+        break
+
+
+print("\n" * 35)
+printBoard(spot1, spot2, spot3, spot4, spot5, spot6, spot7, spot8, spot9, spot10, spot11, spot12, spot13, spot14, spot15, spot16, spot17, spot18, spot19, spot20, spot21, spot22, spot23, spot24, spot25, spot26, spot27, spot28, spot29, spot30, spot31, spot32, spot33, spot34, spot35, spot36, spot37, spot38, spot39, spot40, spot41, spot42, spot43, spot44, spot45, spot46, spot47, spot48, spot49, spot50, spot51, spot52, spot53, spot54, spot55, spot56, spot57, spot58, spot59, spot60, spot61, spot62, spot63, spot64, spot65, spot66, spot67, spot68, spot69, spot70, spot71, spot72, spot73, spot74, spot75, spot76, spot77, spot78, spot79, spot80, spot81)
